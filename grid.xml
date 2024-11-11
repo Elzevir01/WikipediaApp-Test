@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="1" parallel="tests">
+	<test name="ANDROID">
+		<parameter name="nodeUrl" value="http://android-c:4723"></parameter><!--/wd/hub-->
+		<classes>
+			<class name="com.Wikipediafondation.WikipediaAppTest"/>
+		</classes>
+	</test>
+</suite>

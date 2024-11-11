@@ -1,0 +1,57 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wikipedia</groupId>
+  <artifactId>wikipedia-android-app-test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>wikipedia-android-app-test</name>
+<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.0</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>grid.xml</suiteXmlFile><!-- SuiteXmlFile -->
+						</suiteXmlFiles>
+					</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<!-- SELENIUM -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.24.0</version>
+		</dependency>
+		<!-- TEST-NG -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.0.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Appium 8.3.0 -->
+		<dependency>
+		    <groupId>io.appium</groupId>
+		    <artifactId>java-client</artifactId>
+		    <version>9.3.0</version>
+		</dependency>
+		<!-- MAVEN SUREFIRE PLUGIN -->
+		<dependency>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-surefire-plugin</artifactId>
+		    <version>3.5.1</version>
+		</dependency>
+	</dependencies>
+</project>
