@@ -45,7 +45,9 @@ public class BrowserFactory {
 						.setAppActivity("org.wikipedia.main.MainActivity")
 						.setNewCommandTimeout(Duration.ofSeconds(60))
 						.setAdbExecTimeout(Duration.ofSeconds(60))
+						.setApp(appPath())
 						.setChromedriverUseSystemExecutable(true);
+						
 						
 				driver = new AndroidDriver(new URL(nodeURL),options);//RemoteWebDriver AppiumDriver AndroidDriver
 				
@@ -69,6 +71,11 @@ public class BrowserFactory {
 		System.out.println(actualDir+appName);
 	    driver.installApp(actualDir+appName);
 	    System.out.println("App instalada exitosamente.");
+	}
+	public String appPath() {
+		String actualDir = System.getProperty("user.dir"+File.separator+"APK"+File.separator);
+		String fullPath = actualDir+"Wikipedia_2.7.50508-r-2024-11-06_APKPure";
+		return  fullPath;
 	}
 
 }
