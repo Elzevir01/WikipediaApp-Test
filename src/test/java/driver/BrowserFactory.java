@@ -41,11 +41,11 @@ public class BrowserFactory {
 						.setPlatformVersion("11.0")
 						.setAdbExecTimeout(Duration.ofSeconds(150))
 						.setAutomationName("UiAutomator2")
+						.setApp(appPath())
 						.setAppPackage("org.wikipedia")
 						.setAppActivity("org.wikipedia.main.MainActivity")
 						.setNewCommandTimeout(Duration.ofSeconds(60))
 						.setAdbExecTimeout(Duration.ofSeconds(60))
-						.setApp(appPath())
 						.setChromedriverUseSystemExecutable(true);
 						
 						
@@ -74,7 +74,7 @@ public class BrowserFactory {
 	}
 	public String appPath() {
 		String actualDir = System.getProperty("user.dir"+File.separator+"APK"+File.separator);
-		String fullPath = actualDir+"Wikipedia_2.7.50508-r-2024-11-06_APKPure";
+		String fullPath = actualDir+"Wikipedia_2.7.50508-r-2024-11-06_APKPure.xapk";
 		return  fullPath;
 	}
 
