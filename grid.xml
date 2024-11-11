@@ -4,7 +4,7 @@
 	<test name="ANDROID">
 		<parameter name="nodeUrl" value="http://android-c:4723"></parameter><!--/wd/hub-->
 		<classes>
-			<class name="com.Wikipediafondation.WikipediaAppTest"/>
+			<class name="com.wikipediafoundation.WikipediaAppTest"/>
 		</classes>
 	</test>
 </suite>

@@ -24,5 +24,6 @@ public WikipediaAppBase() {
 public void tapSaltar() {
 	findElemento(saltar).click();
 }
+
 }
 
