@@ -30,7 +30,7 @@ public class BrowserFactory {
 		return driver;
 	}
 
-	public WebDriver setDriver(String androidType, String nodeURL) throws MalformedURLException {
+	public WebDriver setDriver(String nodeURL) throws MalformedURLException {
 		System.getProperty("java.classpath");
 		new DesiredCapabilities();
 			try {

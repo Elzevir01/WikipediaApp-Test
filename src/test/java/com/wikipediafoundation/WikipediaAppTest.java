@@ -24,10 +24,10 @@ public class WikipediaAppTest {
   
   @BeforeTest
   @Parameters({"browser", "nodeUrl"})
-  public void SetUp(String browser, String nodeUrl) {
+  public void SetUp(String nodeUrl) {
 		try {
 			bf = new BrowserFactory();
-			DriverFactory.getInstance().setDriver(bf.setDriver(browser, nodeUrl));
+			DriverFactory.getInstance().setDriver(bf.setDriver(nodeUrl));
 			driver = DriverFactory.getInstance().getDriver();
 			}catch(Exception exc){
 //				Log.error("Causa : "+exc.getCause());
