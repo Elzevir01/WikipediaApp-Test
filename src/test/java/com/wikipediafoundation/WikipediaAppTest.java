@@ -23,7 +23,7 @@ public class WikipediaAppTest {
   }
   
   @BeforeTest
-  @Parameters({"browser", "nodeUrl"})
+  @Parameters({"nodeUrl"})
   public void SetUp(String nodeUrl) {
 		try {
 			bf = new BrowserFactory();
